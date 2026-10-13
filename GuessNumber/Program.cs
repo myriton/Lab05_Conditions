@@ -68,8 +68,56 @@
 // string parity = n % 2 == 0 ? "четное" : "нечетное";
 // Console.WriteLine($"Число {n} - {parity}.");
 
-Console.WriteLine("Меню");
-Console.WriteLine("1. Посмотреть расписание");
-Console.WriteLine("2. Посмотреть оценки");
-Console.WriteLine("3");
-Console.WriteLine("Меню");
+// Console.WriteLine("Меню");
+// Console.WriteLine("1. Посмотреть расписание");
+// Console.WriteLine("2. Посмотреть оценки");
+// Console.WriteLine("3. Связаться с преподавателем");
+// Console.WriteLine("4. Выйти");
+// Console.Write("Выберите пункт (1-4): ");
+// string choice = Console.ReadLine();
+// switch (choice)
+// {
+//     case "1": 
+//         Console.WriteLine("Расписание: ИСП-242, каб. 136, 13:50");
+//         break;
+//     case "2": 
+//         Console.WriteLine("Ваши оценки: ИСРПО - 20, РМП - 35,");
+//         break;
+//     case "3": 
+//         Console.WriteLine("Email: nikasevcenko642@gmail.com");
+//         break;
+//     case "4": 
+//         Console.WriteLine("До свидания!");
+//         break;
+//     default:
+//         Console.WriteLine($"Ошибка: пункт '{choice}' не существует. Введите число от 1 до 4.");
+//         break;
+// }
+Console.Write("\nВведите номер месяца (1-12): ");
+int seasons = int.Parse(Console.ReadLine());
+switch (seasons)
+{
+    case 12:
+    case 1:
+    case 2:
+        Console.WriteLine("Зима");
+        break;
+    case 3:
+    case 4:
+    case 5:
+        Console.WriteLine("Весна");
+        break;
+    case 6:
+    case 7:
+    case 8:
+        Console.WriteLine("Лето");
+        break;
+    case 9:
+    case 10:
+    case 11:
+        Console.WriteLine("Осень");
+        break;
+    default:
+        Console.WriteLine("Введите месяц от 1 до 12");
+        break;
+}
